@@ -87,3 +87,22 @@ a:hover{
 .button a:hover{
     color: rgb(198, 188, 188);
 }
+.burger-menu{
+    display: none;
+}
+
+
+@media screen and (max-width:640px){
+    .container{background-color: black;}
+.burger-menu{
+    display: block;
+    img{ margin-right: -45px;}
+    .navigation-box{margin:0 45px}
+}
+nav{display: none;}
+}
+@media screen and (max-width:380px){
+.inner-box{
+    flex-wrap: wrap;
+
+}}

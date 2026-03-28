@@ -70,4 +70,16 @@
   fill: white;
   max-width: 36px;
   display: flex;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+a:hover {
+  color: rgb(135, 88, 237);
+}
+
+.button a:hover {
+  color: rgb(198, 188, 188);
 }/*# sourceMappingURL=header-style.css.map */

@@ -54,6 +54,7 @@ ul{
 a{
     color: white;
     gap: 10px;
+  
 }
 
 .button{
@@ -64,7 +65,7 @@ a{
     display: flex;
     gap: 10px;
     a{
-        // padding: 0px 7px;
+
         font-size: 16px;
         display: flex;
         align-items: center;
@@ -75,3 +76,14 @@ a{
 
 svg{fill: white; max-width: 36px; display: flex;}
  }
+
+.dropdown-menu{
+    display: none;
+}
+
+a:hover{
+  color: rgb(135, 88, 237);
+}
+.button a:hover{
+    color: rgb(198, 188, 188);
+}

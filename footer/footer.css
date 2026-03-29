@@ -9,21 +9,20 @@
 .box {
   background-color: black;
   color: white;
+  padding: 15px;
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 60px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 80px 10%;
 }
 
 .logo {
-  flex: 1;
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   margin: 0 auto;
-  max-width: 200px;
 }
 .logo img {
   max-width: 60px;
@@ -36,12 +35,15 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+.logo span {
+  font-size: 22px;
+  font-weight: bold;
+}
 
 .menu {
-  display: flex;
-  flex: 2;
-  justify-content: space-between;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 .menu a {
   color: #b1abab;

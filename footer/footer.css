@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.box {
+  background-color: black;
+  color: white;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.logo img {
+  max-width: 58px;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid rgb(177, 171, 171);
+  margin: 40px;
+  padding: 20px;
+}
+
+.join-community {
+  justify-content: center;
+  align-items: center;
+}
+.join-community ul {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+.join-community img {
+  max-width: 24px;
+  margin: 15px 0 40px 0;
+}
+.join-community h2 {
+  margin: 0;
+}
+
+.payment-methods img {
+  max-width: 50px;
+}
+.payment-methods .icons {
+  display: flex;
+  gap: 15px;
+}
+.payment-methods h2 {
+  margin: 0;
+  margin-bottom: 12px;
+}/*# sourceMappingURL=footer.css.map */

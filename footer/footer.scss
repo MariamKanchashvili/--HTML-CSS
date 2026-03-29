@@ -12,19 +12,45 @@
 .main{
     display:flex;
     justify-content:space-between;
-    align-items: flex-start;
+    align-items: flex-start; 
+   padding:  60px;
+   margin: 0 auto;
   
 }
 .logo{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    img{max-width: 58px;}
+   
+    flex: 1;
+    align-items: center;
+    margin: 0  auto;
+    max-width: 200px;
+
+
+    img{max-width: 60px;
+        margin-bottom: 10px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;  
+    // fit content მოძიებული ინფორმაციაა
+    }
+   
 }
 .menu{
  display: flex;
+ flex: 2;
+  justify-content: space-between;
  gap: 50px;
+ 
+  
+ a{color:#b1abab}
+li{ line-height: 3;}
+
 }
+
+
+
 
 .footer{
     display: flex;

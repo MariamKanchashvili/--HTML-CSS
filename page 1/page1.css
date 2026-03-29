@@ -24,7 +24,6 @@
 .card {
   border-radius: 25px;
   max-width: 500px;
-  padding: 21px 63px;
   background-color: rgb(135, 88, 237);
 }
 
@@ -32,6 +31,10 @@
   width: 100%;
   height: 100%;
   border-radius: 25px;
+}
+
+.text {
+  padding: 21px 60px;
 }
 
 p {
@@ -50,7 +53,7 @@ button {
   padding: 15px 37px;
   border: none;
   border-radius: 50px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 button span {

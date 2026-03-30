@@ -6,6 +6,14 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "montserrat";
+  src: url(./fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(./fonts/roboto/static/Roboto-Bold.ttf);
+}
 .box {
   background-color: black;
   color: white;
@@ -34,6 +42,7 @@
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 68px;
 }
 .logo span {
   font-size: 22px;
@@ -46,7 +55,7 @@
   gap: 40px;
 }
 .menu a {
-  color: #b1abab;
+  color: white;
 }
 .menu li {
   line-height: 3;
@@ -75,7 +84,9 @@
   margin: 15px 0 40px 0;
 }
 .join-community h2 {
-  margin: 0;
+  margin-bottom: 12px;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
 .payment-methods img {
@@ -83,9 +94,18 @@
 }
 .payment-methods .icons {
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
 .payment-methods h2 {
-  margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 23px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+h2, span {
+  font-family: "montserrat";
+}
+
+li, a {
+  font-family: sans-serif;
 }/*# sourceMappingURL=footer.css.map */

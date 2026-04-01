@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "montserrat-bold";
+  src: url(./fonts/montserrat/static/Montserrat-Bold.ttf);
+}
 .container {
   height: 100vh;
   background-image: url(./image/1page.avif);
@@ -84,13 +88,20 @@ button span {
 
 .container-section2 {
   background-color: black;
-  padding: 20px;
+  padding: 30px;
 }
 
 .header-section2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1300px;
+  margin-left: 50px;
+  padding: 30px;
+}
+.header-section2 h2 {
+  font-size: 42px;
+  font-family: "montserrat-bold";
 }
 .header-section2 .button-view {
   border: 2px solid white;
@@ -98,6 +109,8 @@ button span {
   background-color: white;
   font-weight: bold;
   cursor: pointer;
+  padding: 10px 36px;
+  font-family: "montserrat-bold";
 }
 .header-section2 .button-view:hover {
   background-color: rgb(135, 88, 237);
@@ -106,29 +119,32 @@ button span {
 
 .product-wrapper {
   display: flex;
-  gap: 30px;
-  padding: 20px;
+  gap: 20px;
+  padding: 20px 0;
   overflow-x: auto;
   scroll-behavior: smooth;
+  margin: 0 auto;
+  max-width: 1200px;
 }
-
-.product-card {
+.product-wrapper .product-card {
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-shrink: 0;
   min-width: 300px;
+  scroll-snap-align: start;
 }
-.product-card img {
+.product-wrapper img {
   max-width: 300px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.product-card h3 {
+.product-wrapper h3 {
   font-size: 16px;
   margin: 15px 0 5px;
   color: white;
+  font-family: sans-serif;
 }
 
 .price {
@@ -150,22 +166,30 @@ button span {
 }
 
 .product-card button {
-  background-color: rgb(135, 88, 237);
   color: white;
   border: none;
-  border-radius: 15px;
+  border-radius: 25px;
   background: linear-gradient(90deg, #7b4dff, #a855f7);
   cursor: pointer;
   font-weight: bold;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: "montserrat-bold";
+}
+.product-card button:hover {
+  background: white;
+  color: rgb(135, 88, 237);
+  text-decoration: underline;
 }
 
 .sale-badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 24px;
   background-color: rgb(135, 88, 237);
   color: white;
-  font-size: 12px;
-  padding: 5px 10px;
+  font-size: 14px;
+  padding: 6px 15px;
   border-radius: 20px;
+  font-family: sans-serif;
 }/*# sourceMappingURL=page1.css.map */

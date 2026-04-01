@@ -26,12 +26,23 @@
 
 .first-side,
 .second-side {
-  width: 50%;
+  width: 100%;
+}
+
+.first-side {
+  position: relative;
 }
 
 .card {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
   border-radius: 25px;
-  max-width: 500px;
+  border: 1px solid none;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50% -50%);
   background-color: rgb(135, 88, 237);
 }
 
@@ -42,7 +53,8 @@
 }
 
 .text {
-  padding: 21px 60px;
+  padding: 20px 60px;
+  border-radius: 25px;
 }
 
 p {
@@ -53,7 +65,7 @@ p {
 h2 {
   color: white;
   font-size: 60px;
-  margin: -14px 0;
+  margin: 22px 0;
 }
 
 button {
@@ -61,11 +73,99 @@ button {
   padding: 15px 37px;
   border: none;
   border-radius: 50px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 button span {
   color: rgb(135, 88, 237);
   font-size: 15px;
   font-weight: bold;
+}
+
+.container-section2 {
+  background-color: black;
+  padding: 20px;
+}
+
+.header-section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-section2 .button-view {
+  border: 2px solid white;
+  color: rgb(135, 88, 237);
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.header-section2 .button-view:hover {
+  background-color: rgb(135, 88, 237);
+  color: white;
+}
+
+.product-wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-width: 300px;
+}
+.product-card img {
+  max-width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-card h3 {
+  font-size: 16px;
+  margin: 15px 0 5px;
+  color: white;
+}
+
+.price {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: rgb(191, 185, 185);
+  font-size: 14px;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-card button {
+  background-color: rgb(135, 88, 237);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #7b4dff, #a855f7);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(135, 88, 237);
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
 }/*# sourceMappingURL=page1.css.map */

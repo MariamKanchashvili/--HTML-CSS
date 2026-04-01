@@ -13,13 +13,13 @@
 }
 .inner-box{
     display: flex;
-    flex: 1;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1200px;}
 
-.logo{ max-width: 48px;}
+.logo{ max-width: 48px;display: flex;flex-shrink: 0;}
 
 
 
@@ -32,12 +32,14 @@ span{
     display: flex;
     align-items: center;
    gap: 15px;
+   flex-shrink: 0;
 }
 
 .navigation-box{
     display: flex;
     align-items: center;
     gap: 20px;
+    min-width: 0;
    
 }
 
@@ -46,6 +48,7 @@ ul{
     gap: 20px; 
     font-size: 16px;
     align-items: center; 
+    flex-wrap: nowrap;
 
 }
 
@@ -74,7 +77,7 @@ a{
 }
 
 svg{fill: white; max-width: 36px; display: flex;}
- }
+ 
 
 .dropdown-menu{
     display: none;
@@ -88,20 +91,28 @@ a:hover{
 }
 .burger-menu{
     display: none;
+    
 }
 
 
 @media screen and (max-width:640px){
-    .container{background-color: black;}
-.burger-menu{
+    .container{background-color: black;padding: 15px}
+ .burger-menu{
     display: block;
-    img{ margin-right: -45px;}
-    .navigation-box{margin:0 45px}
-}
-nav{display: none;}
-}
-@media screen and (max-width:380px){
-.inner-box{
-    flex-wrap: wrap;
+    
+    .navigation-box{margin:0 45px}}
 
-}}
+ nav{display: none;justify-content: flex-end}
+}
+@media screen and (max-width: 430px){
+    .container{padding: 10px;}
+    .logo{width: 30px;}
+    span{font-size: 15px;}
+    .burger-menu{
+        img{width: 35px;}
+    }
+    .navigation-box{svg{max-width: 26px;}}
+}
+
+
+

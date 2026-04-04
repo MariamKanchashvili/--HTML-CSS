@@ -6,15 +6,17 @@ list-style: none;
 text-decoration: none;
 }
 
-@font-face {
-  font-family:"montserrat-bold" ;
-  src: url(./fonts/montserrat/static/Montserrat-Bold.ttf);
+$main-color:rgb(135, 88, 237);
 
+@font-face{
+  font-family:"montserrat-bold";
+   src: url(./fonts/montserrat/static/Montserrat-Bold.ttf);
 }
-@font-face {
+@font-face { 
   font-family: "roboto";
   src: url(./fonts/roboto/static/Roboto-Thin.ttf);
 }
+
 // section1
 .container {
   height: 100vh;
@@ -33,41 +35,58 @@ text-decoration: none;
   margin: 0 auto;
   padding: 30px;
   gap: 30px;
+  position: relative;
 }
-
+.wrapper-section1{
+  display: flex;
+  align-items: center;
+ 
+}
 .first-side,
-.second-side {
-  width: 100%;
+ .second-side {
+   width: 100%;
   position: relative;
  
 }
 
 
 .first-side{
-  position: relative;
   display: flex;
-  
-  align-items: flex-start;
-
+  align-items: center; 
+  position: relative;
+  top: 37px;
+  right: 30px;
+ z-index: 2;
 }
+ 
+
+
 .card {
   display: flex;
-  flex: 1;
+
   max-width: 600px;
   border-radius: 25px;
   border: 1px solid none; 
   position: relative;
-  left: 10px;
+ bottom: 200px;
   right: 15px;
-  transform: translate(-50% -50%);
   background-color: rgb(135, 88, 237);
+ 
 }
+.second-side{
+    width: 500px;
+  height: 100vh;
+  border-radius: 30px;
+ 
 
+ }
 .second-side img {
-  width: 100%;
   height: 100%;
   border-radius: 25px;
   margin-left: 20px;
+  position: relative;
+    top: 70px;
+
 
 }
 .text{
@@ -108,6 +127,8 @@ button span {
 background-color: black;
 padding: 30px;
 }
+
+
 .header-section2{
   display: flex;
   justify-content: space-between;
@@ -115,6 +136,7 @@ padding: 30px;
 max-width: 1300px;
 margin-left: 50px;
 padding: 30px;
+margin-top: 50px;
 
   h2{
     font-size: 42px;
@@ -164,12 +186,17 @@ flex-direction: column;
 
 flex-shrink: 0;
 min-width: 300px;
- scroll-snap-align: start;
+ scroll-snap-align: start; 
+ img:hover{
+  transform: scale(1.05);
+
+ }
 }
   img{
    
     max-width: 300px;
     object-fit: contain;
+    
   
       
     }
@@ -225,6 +252,8 @@ min-width: 300px;
    padding: 6px 15px;
    border-radius: 20px;
    font-family: sans-serif;
+  
+
 }
 
 // section3 scss
@@ -249,8 +278,8 @@ min-width: 300px;
   gap: 30px;
   padding: 30px;
   margin: 10px;
-  flex-wrap: wrap;
   
+     
  
 }
 .box-category-item{
@@ -258,7 +287,9 @@ min-width: 300px;
   flex-direction: column;
   gap: 10px;
   text-align: center;
-  max-width: 400px;
+  max-width: 400px; 
+
+
   
 }
 .shop-item{
@@ -266,23 +297,110 @@ min-width: 300px;
   max-width: 400px;
   height: 500px;
   overflow: hidden;
-  cursor: pointer;
-
+  cursor: pointer; 
+  &:hover{
+    transform: scale(1.05);
   }
   img{
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover; 
-     &:hover{
-    transform: scale(1.05);
+    
   }
  
 }
- .box-category a{
+ .box-category a {
     color: white;
     font-size: 22px;
     font-family:"roboto" ;
     margin-top: 10px;
-    font-weight: 1000;
+    font-weight: 900;
+  }
+
+
+  // section 4 SCSS
+
+  .container-section4{
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 60px;
+    margin: 0 auto;
+  }
+  .card-section4{
+    width: 600px;
+    height: 50vh;
+    padding: 35px;
+    background-color:$main-color;
+    border-radius: 25px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+
+    span{font-size: 22px;font-family:"roboto" ;}
+    h2{font-size: 140px;font-family:"montserrat-bold" ;}
+    p{font-size: 42px;font-family:"montserrat-bold";margin-bottom: 25px;}
+    a{background-color: white; padding: 9px 15px;cursor: pointer; border-radius: 25px; margin-top: 20px;
+      &:hover{border: 1px solid white; background-color:$main-color}
+      span{font-size: 15px;font-family:"montserrat-bold" ;color:$main-color; &:hover{color: white}};
+    }
+  }
+
+.images-section4{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+  .poster-4{
+    max-width: 400px;
+    width: 400px;
+    height: 60vh;
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+
+     img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     }
+  }
+
+  // section-6
+
+  .container-section6{
+  background: url(./image/section-6\ cover.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width:  1200px; 
+  height: 60vh;
+  }
+  .text-box6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    color: white;
+  h2{font-size:70px ;font-family:"montserrat-bold" ;}
+  h3{font-size:  22px; ;font-family:"roboto" ;margin-bottom: 10px;}
+  a{background-color:$main-color ;padding:8px 15px ;border-radius: 25px;
+  span{color: white;} font-size:15px ;font-family:"motserrat-bold" ;}
+  
+  
+  
   }

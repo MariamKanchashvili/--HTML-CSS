@@ -161,10 +161,6 @@ margin-top: 50px;
    }
 }
 
-
-
-// product-wrapper style
-
 .product-wrapper{
 
 display: flex;
@@ -174,8 +170,6 @@ overflow-x: auto;
 scroll-behavior: smooth;
 margin: 0 auto;
 max-width: 1200px;
-
-
 
 
 .product-card{
@@ -341,6 +335,7 @@ min-width: 300px;
     margin: 0 auto;
     color: white;
     text-align: center;
+    z-index: 2;
 
     span{font-size: 22px;font-family:"roboto" ;}
     h2{font-size: 140px;font-family:"montserrat-bold" ;}
@@ -383,7 +378,6 @@ min-width: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  max-width:  1200px; 
   height: 60vh;
   }
   .text-box6{
@@ -394,7 +388,7 @@ min-width: 300px;
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50% ,-50%);
     color: white;
   h2{font-size:70px ;font-family:"montserrat-bold" ;}
   h3{font-size:  22px; ;font-family:"roboto" ;margin-bottom: 10px;}
@@ -404,3 +398,143 @@ min-width: 300px;
   
   
   }
+  // section-7
+  .container-section7{
+    background-color: black;
+    color: white;
+    padding: 40px;
+  }
+  .wrapper-section7{padding: 15px;}
+
+  .header-section7{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+
+    h2{font-size:42px ;font-family:"montserrat-bold" ;}
+    a{border:1px solid white;background-color: white;border-radius: 25px;padding: 8px 15px;&:hover{background-color: $main-color;}}
+    span{color: $main-color;font-size: 15px;font-family: "montserrat-bold";
+    &:hover{background-color: $main-color;color: white;}}
+  }
+  .content-section7{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    overflow-x: auto;
+  }
+.arrow{ 
+img{width: 20px;}
+
+}
+
+
+  .scrollbar7{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+   
+  .games7{
+    width: 233px;
+    object-fit: cover;
+  }
+  img{
+    width: 233px;
+    height: 100%;
+    cursor: pointer;
+  }
+  p{font-size: 16px;font-family: sans-serif;font-weight: bold;}
+  .old-price7{font-size: 16px;font-family: sans-serif;text-decoration: line-through;}
+  .current-price7{font-size: 16px;font-family: sans-serif;}
+  .sale7{
+    background-color: $main-color;
+    border-radius: 25px;
+    padding: 3px 12px;
+    width: 60px;
+    font-size:14px ;
+    font-family: sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 0;
+  
+  }
+
+}
+// section 8
+
+.form-box8{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+background-image: url("./image/form.png");
+ height: 65vh;
+}
+.text-box8{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  p{font-size: 42px;font-family: "montserrat-bold";}
+  span{margin-bottom: 25px;font-size: 16px;font-family: sans-serif;}
+}
+.input8{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color:rgb(250, 250, 250);
+  label{font-size: 15px; font-family: sans-serif;color: white;}
+  input{
+  border: 3px solid white;
+  border-radius: 10px;
+  background: none;
+  height: 30px;
+  input:visited{border-color: red;}
+  // გაწითლება მინდა ინფუთის ,სპანის და სვგ დაჭერის შემდეგ  
+}
+  
+  
+}
+.required-8{
+  display: flex;
+  align-items: center;
+
+  
+}
+.check8{
+  color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 50px;
+.checkbox8{
+  width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+.submit-button{ 
+  padding: 11px 30px;
+  border-radius: 15px;
+  border: 1px solid white;
+  &:hover{background-color: $main-color;}
+  span{color: black;font-weight: bold; font-family:"montserrat-bold";font-size: 15px;
+  &:hover{color: white;}}
+
+
+}}
+.games8{
+  background: linear-gradient(90deg, #7b4dff, #a855f7);
+img{
+  position: relative;
+bottom: 85px;
+}
+}
